@@ -6,7 +6,8 @@
   },
   "extends": [
     "xo",
-    "xo-react"
+    // "xo-react",
+    "plugin:react/recommended"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -34,7 +35,7 @@
     "object-curly-spacing": ["error", "always"],
     "quotes": [ "error", "single" ],
     "react/function-component-definition": 0,
-    "react/jsx-indent-props": ["error", "tab"],
+    "react/jsx-indent-props": "off",
     "react/jsx-tag-spacing": "off",
     "react/no-children-prop": "off",
     "react/prop-types": "off",
@@ -42,5 +43,10 @@
     "semi": [ "error", "never" ],
     "space-before-function-paren": "off",
     "spaced-comment": "warn"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
