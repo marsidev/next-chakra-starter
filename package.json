@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "(if exist .next rd /s /q .next 2>nul) && next dev -p 5500",
+    "dev": "(if exist .next rd /s /q .next 2>nul) && next dev -p 5000",
     "build": "next build",
     "start": "next start -p $PORT",
     "lint": "eslint .",
@@ -31,5 +31,16 @@
   "packageManager": "pnpm@7.0.0-rc.3",
   "engines": {
     "node": "14.x"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@babel/core"
+      ],
+      "allowedVersions": {
+        "react": "18",
+        "react-dom": "18"
+      }
+    }
   }
 }
