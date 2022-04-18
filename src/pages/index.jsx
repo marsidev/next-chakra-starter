@@ -1,11 +1,12 @@
 import {
-	useColorMode,
+	Button,
+	Code,
+	chakra,
 	Flex,
 	Heading,
 	Text,
-	Code,
-	useToken,
-	chakra
+	useColorMode,
+	useToken
 } from '@chakra-ui/react'
 import Link from '@components/Link'
 import Layout from '@layouts/main'
@@ -50,22 +51,18 @@ export default function Home() {
 					</Link>
 				</Heading>
 
-				<Text
-					as='button'
-					textAlign='center'
-					fontSize='1rem'
-					mt={2}
-					textDecoration='underline'
-					cursor='pointer'
+				<Button
 					_hover={{ color: 'teal.300' }}
+					textDecoration='underline'
 					onClick={toggleColorMode}
+					variant='link'
 				>
 					Switch theme
-				</Text>
+				</Button>
 
 				<Text as='h2' textAlign='center' fontSize='1.3rem' my={6}>
 					Get started by editing{' '}
-					<Code children='pages/index.js' fontSize='1.2rem' />
+					<Code children='pages/index.jsx' fontSize='1.2rem' />
 				</Text>
 			</chakra.section>
 
