@@ -6,7 +6,7 @@ import {
 import Link from '@components/Link'
 import VercelIcon from '@components/VercelIcon'
 
-const Footer = () => {
+const Footer = ({ ...props }) => {
 	return (
 		<chakra.footer
 			as='footer'
@@ -17,6 +17,7 @@ const Footer = () => {
 			justifyContent='center'
 			alignItems='center'
 			flexDir='row'
+			{...props}
 		>
 			<Flex justifyContent='center' alignItems='center'>
 				<Link
