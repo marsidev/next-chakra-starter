@@ -47,7 +47,7 @@ export default function Home() {
         <Heading as='h1'>
           Welcome to{' '}
           <Link isExternal color='teal.300' href='https://nextjs.org'>
-            Next.js!
+            Next.js + Chakra UI starter!
           </Link>
         </Heading>
 
