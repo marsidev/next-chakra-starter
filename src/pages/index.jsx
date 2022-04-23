@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react'
 import Link from '@components/Link'
 import Layout from '@layouts/main'
+import GitCorner from '@components/GitCorner'
 
 const Card = ({ href, title, description }) => {
   const [teal300, gray200] = useToken('colors', ['teal.300', 'gray.200'])
@@ -105,6 +106,8 @@ export default function Home() {
           description='Learn how to use the Chakra UI components.'
         />
       </Flex>
+
+      <GitCorner url='https://github.com/marsigliadev/next-chakra-starter' />
     </Layout>
   )
 }
