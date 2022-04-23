@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Flex } from '@chakra-ui/react'
 import Footer from '@components/Footer'
-import { siteConfig } from '@lib/config'
+import { siteConfig } from '@lib/seo'
 
 const HeadComponent = () => {
   return (

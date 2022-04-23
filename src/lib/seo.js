@@ -11,6 +11,6 @@ export const siteConfig = {
   twitterCard: 'summary_large_image',
   twitterImage: `https://og-image.vercel.app/${encodeURI(title)}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`, // >=300x157, <5MB, 2:1 ratio
   twitterImageAlt: '', // <=420 characters
-  twitterSite: '',
-  twitterCreator: ''
+  twitterSite: '@marsigliacr',
+  twitterCreator: '@marsigliacr'
 }
