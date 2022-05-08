@@ -9,7 +9,6 @@ import {
   useToken
 } from '@chakra-ui/react'
 import Link from '@components/Link'
-import Layout from '@layouts/main'
 import GitCorner from '@components/GitCorner'
 
 const Card = ({ href, title, description }) => {
@@ -43,7 +42,7 @@ export default function Home() {
   const { toggleColorMode } = useColorMode()
 
   return (
-    <Layout>
+    <>
       <chakra.section textAlign='center'>
         <Heading as='h1'>
           Welcome to{' '}
@@ -108,6 +107,6 @@ export default function Home() {
       </Flex>
 
       <GitCorner url='https://github.com/marsigliadev/next-chakra-starter' />
-    </Layout>
+    </>
   )
 }

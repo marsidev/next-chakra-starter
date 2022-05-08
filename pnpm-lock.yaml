@@ -12,6 +12,7 @@ specifiers:
   eslint-plugin-react-hooks: ^4.4.0
   framer-motion: ^6
   next: ^12
+  next-seo: ^5.4.0
   react: ^18
   react-dom: ^18
   zustand: ^3.7.2
@@ -23,6 +24,7 @@ dependencies:
   axios: 0.26.1
   framer-motion: 6.2.10_zpnidt7m3osuk7shl3s4oenomq
   next: 12.1.6_zpnidt7m3osuk7shl3s4oenomq
+  next-seo: 5.4.0_prxmvcw4zcdm6quznuba4x6uyu
   react: 18.0.0
   react-dom: 18.0.0_react@18.0.0
   zustand: 3.7.2_react@18.0.0
@@ -259,7 +261,7 @@ packages:
   /@chakra-ui/descendant/3.0.0-next.1_react@18.0.0:
     resolution: {integrity: sha512-0VNyz+YHTusQ8OIlytH7luI0ar1/96Tk2iK7KXZEPlY8BKUpSXR7vB5qwHogGal84NGPdlVgMr3EP2MmnxS3eg==}
     peerDependencies:
-      react: '>=18 || 18 || 18 || 18'
+      react: '>=18 || 18'
     dependencies:
       '@chakra-ui/react-utils': 2.0.0-next.1_react@18.0.0
       react: 18.0.0
@@ -2030,6 +2032,18 @@ packages:
   /natural-compare/1.4.0:
     resolution: {integrity: sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=}
     dev: true
+
+  /next-seo/5.4.0_prxmvcw4zcdm6quznuba4x6uyu:
+    resolution: {integrity: sha512-R9DhajPwJnR/lsF2hZ8cN8uqr5CVITsRrCG1AF5+ufcaybKYOvnH8sH9MaH4/hpkps3PQ9H71S7J7SPYixAYzQ==}
+    peerDependencies:
+      next: ^8.1.1-canary.54 || >=9.0.0
+      react: '>=16.0.0 || 18'
+      react-dom: '>=16.0.0 || 18'
+    dependencies:
+      next: 12.1.6_zpnidt7m3osuk7shl3s4oenomq
+      react: 18.0.0
+      react-dom: 18.0.0_react@18.0.0
+    dev: false
 
   /next/12.1.6_zpnidt7m3osuk7shl3s4oenomq:
     resolution: {integrity: sha512-cebwKxL3/DhNKfg9tPZDQmbRKjueqykHHbgaoG4VBRH3AHQJ2HO0dbKFiS1hPhe1/qgc2d/hFeadsbPicmLD+A==}

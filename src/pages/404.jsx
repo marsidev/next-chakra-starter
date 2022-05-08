@@ -1,14 +1,11 @@
-import Head from 'next/head'
 import Layout from '@layouts/main'
 import { Heading, Container, Center, HStack, StackDivider } from '@chakra-ui/react'
+import { DefaultSeo } from 'next-seo'
 
 export default function Custom404() {
   return (
     <Layout>
-      <Head>
-        <title>404: This page could not be found</title>
-      </Head>
-
+      <DefaultSeo title='404' />
       <Container>
         <Center>
           <HStack
