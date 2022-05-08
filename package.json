@@ -11,14 +11,14 @@
     "lint:fix": "eslint . --ext .js --ext .jsx --ext .ts --ext .tsx --fix"
   },
   "dependencies": {
-    "@chakra-ui/react": "^2.0.0-next.2",
+    "@chakra-ui/react": "^2.0.0-next.4",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "axios": "^0.26.1",
     "framer-motion": "^6",
-    "next": "^12.1.5",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "next": "^12",
+    "react": "^18",
+    "react-dom": "^18",
     "zustand": "^3.7.2"
   },
   "devDependencies": {
