@@ -1,6 +1,8 @@
 {
   "name": "next-chakra-starter",
-  "version": "0.1.0",
+  "description": "A boilerplate for React apps using Next.js and Chakra UI.",
+  "version": "1.0.0",
+  "repository": "git@github.com:marsigliadev/next-chakra-starter.git",
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
@@ -20,6 +22,7 @@
     "next-seo": "^5.4.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^4.3.1",
     "zustand": "^3.7.2"
   },
   "devDependencies": {
