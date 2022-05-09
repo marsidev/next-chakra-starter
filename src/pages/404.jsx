@@ -1,10 +1,9 @@
-import Layout from '@layouts/main'
 import { Heading, Container, Center, HStack, StackDivider } from '@chakra-ui/react'
 import { DefaultSeo } from 'next-seo'
 
-export default function Custom404() {
+const Custom404 = () => {
   return (
-    <Layout>
+    <>
       <DefaultSeo title='404' />
       <Container>
         <Center>
@@ -23,6 +22,8 @@ export default function Custom404() {
           </HStack>
         </Center>
       </Container>
-    </Layout>
+    </>
   )
 }
+
+export default Custom404
