@@ -37,11 +37,11 @@ const Footer = ({ ...props }) => {
           flexDir={{ base: 'column', md: 'row' }}
           gap={{ base: 2, md: 0 }}
         >
-          <Text color={useColorModeValue('#8e8e8e', 'gray.500')} fontSize={16}>
+          <Text color={useColorModeValue('#8e8e8e', 'gray.500')} fontSize={16} fontWeight={600}>
             {'Made with ♥ by '}
             <Link
               href={GITHUB_URL}
-              color={useColorModeValue('blue.600', 'blue.300')}
+              color={useColorModeValue('blue.400', 'blue.300')}
               isExternal
               textDecoration='underline'
             >
