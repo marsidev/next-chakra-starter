@@ -4,17 +4,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  scoll-behavior: smooth;
+  transition: background-color .15s ease-in-out !important;
 }
 
 * {
   box-sizing: border-box;
 }
-
 
 a:hover .octo-arm { animation: octocat-wave 560ms ease-in-out; }
 
