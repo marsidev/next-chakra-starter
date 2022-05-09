@@ -1,112 +1,43 @@
-import {
-  Button,
-  Code,
-  chakra,
-  Flex,
-  Heading,
-  Text,
-  useColorMode,
-  useToken
-} from '@chakra-ui/react'
+import { Box, Heading, useColorModeValue } from '@chakra-ui/react'
 import Link from '@components/Link'
-import GitCorner from '@components/GitCorner'
+import { HiOutlineDocumentText as DocIcon } from 'react-icons/hi'
+import MotionButton from '@components/MotionButton'
 
-const Card = ({ href, title, description }) => {
-  const [teal300, gray200] = useToken('colors', ['teal.300', 'gray.200'])
-
+const App = () => {
   return (
-    <Link
-      isExternal
-      href={href}
-      m={4}
-      p={6}
-      textAlign='left'
-      border={`1px solid ${gray200}`}
-      borderRadius={12}
-      transition='0.15s all ease-in-out'
-      maxW='340px'
-      color='inherit'
-      textDecoration='none'
-      _hover={{ color: teal300, borderColor: teal300 }}
-      _active={{ color: teal300, borderColor: teal300 }}
-    >
-      <Heading as='h2' fontSize='1.5rem'>
-        {title} &rarr;
-      </Heading>
-      <Text fontSize='1.25rem'>{description}</Text>
-    </Link>
-  )
-}
-
-export default function Home() {
-  const { toggleColorMode } = useColorMode()
-
-  return (
-    <>
-      <chakra.section textAlign='center'>
-        <Heading as='h1'>
-          Welcome to{' '}
-          <Link isExternal color='teal.300' href='https://nextjs.org'>
-            Next.js + Chakra UI starter!
-          </Link>
-        </Heading>
-
-        <Button
-          _hover={{ color: 'teal.300' }}
-          textDecoration='underline'
-          onClick={toggleColorMode}
-          variant='link'
+    <Box as='section'>
+      <Heading as='h1' fontSize='6xl'>
+        <Link
+          isExternal
+          color={useColorModeValue('blackAlpha.800', 'whiteAlpha.800')}
+          href='https://nextjs.org'
         >
-          Switch theme
-        </Button>
+          Next.js
+        </Link>{' '}
+        <Link
+          isExternal
+          color={useColorModeValue('teal.500', 'teal.300')}
+          href='https://chakra-ui.com'
+        >
+          Chakra UI
+        </Link>
+        {' Starter'}
+      </Heading>
 
-        <Text as='h2' textAlign='center' fontSize='1.3rem' my={6}>
-          Get started by editing{' '}
-          <Code children='pages/index.jsx' fontSize='1.2rem' />
-        </Text>
-      </chakra.section>
-
-      <Flex
-        as='section'
-        align='center'
-        justify='center'
-        flexWrap='wrap'
-        maxW={800}
-        w='100%'
-        flexDir={['column', 'row']}
-      >
-        <Card
-          href='https://nextjs.org/docs'
-          title='NextJS Docs'
-          description='Find in-depth information about Next.js features and API.'
-        />
-
-        <Card
-          href='https://nextjs.org/learn'
-          title='Learn NextJS'
-          description='Learn about Next.js in an interactive course with quizzes!'
-        />
-
-        <Card
-          href='https://github.com/vercel/next.js/tree/canary/examples'
-          title='NextJS Examples'
-          description='Discover and deploy boilerplate example Next.js projects.'
-        />
-
-        <Card
-          href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-          title='Deploy'
-          description='Instantly deploy your Next.js site to a public URL with Vercel.'
-        />
-
-        <Card
-          href='https://chakra-ui.com/docs'
-          title='Chakra UI Docs'
-          description='Learn how to use the Chakra UI components.'
-        />
-      </Flex>
-
-      <GitCorner url='https://github.com/marsigliadev/next-chakra-starter' />
-    </>
+      <Box mt={4}>
+        <Link href='/docs'>
+          <MotionButton
+            leftIcon={<DocIcon />}
+            size='lg'
+            variant='solid'
+            colorScheme='pink'
+          >
+            Docs
+          </MotionButton>
+        </Link>
+      </Box>
+    </Box>
   )
 }
+
+export default App
