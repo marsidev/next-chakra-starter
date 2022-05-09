@@ -45,7 +45,7 @@ const Footer = ({ ...props }) => {
             {'Made with ♥ by '}
             <Link
               href={GITHUB_URL}
-              color={useColorModeValue('blue.400', 'blue.300')}
+              color={useColorModeValue('teal.400', 'teal.300')}
               isExternal
               textDecoration='underline'
             >
