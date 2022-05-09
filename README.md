@@ -1,34 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <h1>Next.js + Chakra UI Starter</h1>
+  <p>A boilerplate for <a href="https://reactjs.org" target="_blank">React</a> apps using <a href="https://nextjs.org/=" target="_blank">Next.js</a> and <a href="https://chakra-ui.com" target="_blank">Chakra UI</a>.</p>
+  
+  
+[![CodeFactor](https://www.codefactor.io/repository/github/marsigliadev/next-chakra-starter/badge)](https://www.codefactor.io/repository/github/marsigliadev/next-chakra-starter)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=marsigliadev_next-chakra-starter&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=marsigliadev_next-chakra-starter)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=marsigliadev_next-chakra-starter&metric=bugs)](https://sonarcloud.io/summary/new_code?id=marsigliadev_next-chakra-starter)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=marsigliadev_next-chakra-starter&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=marsigliadev_next-chakra-starter)
+[![Depfu](https://badges.depfu.com/badges/fc6e730632ab9dacaf7df478a08684a7/overview.svg)](https://depfu.com/repos/github/marsigliadev/next-chakra-starter)
+</div>
+
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone this template using one of these ways:
 
+1. [Fork](https://github.com/marsigliadev/next-chakra-starter/fork) the repository
+
+2. Clone the repository locally
 ```bash
-npm run dev
-# or
-yarn dev
+$ git clone "https://github.com/marsigliadev/next-chakra-starter" cloned-next-chakra-project
+$ cd cloned-next-chakra-project
 ```
 
-Open [http://localhost:5500](http://localhost:5500) with your browser to see the result.
+3. Deploy to Vercel
+   
+   [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fmarsigliadev%2Fnext-chakra-starter)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### 2. Install dependencies
+```bash
+$ pnpm install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:5500/api/hello](http://localhost:5500/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### 3. Run the development server
+```bash
+$ pnpm dev
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Open [http://localhost:5500](http://localhost:5500) with your browser to see the project.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Packages
+The following packages are pre-installed in this project:
+  - [next](https://github.com/vercel/next.js)
+  - [chakra-ui](https://github.com/chakra-ui/chakra-ui)
+  - [next-seo](https://github.com/garmeeh/next-seo)
+  - [axios](https://github.com/axios/axios)
+  - [framer-motion](https://github.com/framer/motion)
+  - [react-icons](https://github.com/react-icons/react-icons)
+  - [zustand](https://github.com/pmndrs/zustand)
 
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
