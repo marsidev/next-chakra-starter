@@ -16,7 +16,7 @@
     "@chakra-ui/react": "^2.0.0-next.4",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "axios": "^0.26.1",
+    "axios": "^0.27.2",
     "framer-motion": "^6",
     "next": "^12",
     "next-seo": "^5.4.0",
@@ -25,7 +25,7 @@
     "react-icons": "^4.3.1",
     "zustand": "^3.7.2"
   },
-  "devDependencies": {                                                                                                
+  "devDependencies": {
     "@types/node": "^17.0.23",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.13.0",
