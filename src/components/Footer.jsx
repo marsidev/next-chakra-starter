@@ -13,7 +13,7 @@ import Link from '@components/Link'
 const GITHUB_URL = 'https://github.com/marsigliadev'
 
 const Footer = ({ ...props }) => {
-  const { toggleColorMode } = useColorMode()
+  const { toggleColorMode, colorMode } = useColorMode()
 
   return (
     <Flex
@@ -37,7 +37,11 @@ const Footer = ({ ...props }) => {
           flexDir={{ base: 'column', md: 'row' }}
           gap={{ base: 2, md: 0 }}
         >
-          <Text color={useColorModeValue('#8e8e8e', 'gray.500')} fontSize={16} fontWeight={600}>
+          <Text
+            color={useColorModeValue('#8e8e8e', 'gray.500')}
+            fontSize={16}
+            fontWeight={600}
+          >
             {'Made with ♥ by '}
             <Link
               href={GITHUB_URL}
@@ -52,7 +56,12 @@ const Footer = ({ ...props }) => {
 
           <HStack justify='center'>
             <Icon as={SunIcon} w={4} h={4} />
-            <Switch colorScheme='teal' size='md' onChange={toggleColorMode} />
+            <Switch
+              colorScheme='teal'
+              size='md'
+              onChange={toggleColorMode}
+              isChecked={colorMode === 'dark'}
+            />
             <Icon as={MoonIcon} w={4} h={4} />
           </HStack>
         </Flex>
