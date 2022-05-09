@@ -11,7 +11,7 @@ export default function Layout({ children }) {
       {/* <Navbar h='10vh' /> */}
       <Flex
         as='main'
-        minH='90vh'
+        minH='92vh'
         flexDir='column'
         justify='center'
         alignItems='center'
@@ -22,7 +22,7 @@ export default function Layout({ children }) {
       >
         {children}
       </Flex>
-      <Footer h='10vh' />
+      <Footer h='8vh' />
     </>
   )
 }
