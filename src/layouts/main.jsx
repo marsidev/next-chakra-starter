@@ -1,7 +1,8 @@
-import { Flex } from '@chakra-ui/react'
+import { Box, Flex } from '@chakra-ui/react'
 import Footer from '@components/Footer'
 import { DefaultSeo } from 'next-seo'
 import { defaultSeo } from 'next-seo.config'
+import GitCorner from '@components/GitCorner'
 
 export default function Layout({ children }) {
   return (
@@ -23,6 +24,10 @@ export default function Layout({ children }) {
         {children}
       </Flex>
       <Footer h='8vh' />
+
+      <Box as='aside'>
+        <GitCorner url='https://github.com/marsigliadev/next-chakra-starter' />
+      </Box>
     </>
   )
 }
