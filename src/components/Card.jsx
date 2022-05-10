@@ -8,7 +8,6 @@ const Card = ({ href, title, description }) => {
 
   return (
     <Link
-      as='article'
       isExternal
       href={href}
       m={4}
@@ -23,10 +22,12 @@ const Card = ({ href, title, description }) => {
       _hover={{ bg: hoverBg }}
       _active={{ bg: hoverBg }}
     >
-      <Heading as='h2' fontSize='2xl'>
-        {title} &rarr;
-      </Heading>
-      <Text fontSize='lg'>{description}</Text>
+      <article>
+        <Heading as='h2' fontSize='2xl'>
+          {title} &rarr;
+        </Heading>
+        <Text fontSize='lg'>{description}</Text>
+      </article>
     </Link>
   )
 }
