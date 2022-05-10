@@ -3,6 +3,12 @@
     "root",
     "components",
     "layout",
-    "pages"
+    "pages",
+    "api",
+    "styles",
+    "assets",
+    "hooks",
+    "store",
+    "misc",
   ]
 }
