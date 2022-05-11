@@ -26,7 +26,7 @@ export default function Layout({ children }) {
       <Footer h='8vh' />
 
       <Box as='aside'>
-        <GitCorner url='https://github.com/marsigliadev/next-chakra-starter' />
+        <GitCorner url='https://github.com/marsidev/next-chakra-starter' />
       </Box>
     </>
   )

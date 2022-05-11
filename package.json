@@ -2,7 +2,7 @@
   "name": "next-chakra-starter",
   "description": "A boilerplate for React apps using Next.js and Chakra UI.",
   "version": "1.0.0",
-  "repository": "git@github.com:marsigliadev/next-chakra-starter.git",
+  "repository": "git@github.com:marsidev/next-chakra-starter.git",
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",

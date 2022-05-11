@@ -10,7 +10,7 @@ import {
 import { BsSunFill as SunIcon, BsMoonFill as MoonIcon } from 'react-icons/bs'
 import Link from '@components/Link'
 
-const GITHUB_URL = 'https://github.com/marsigliadev'
+const GITHUB_URL = 'https://github.com/marsidev'
 
 const Footer = ({ ...props }) => {
   const { toggleColorMode, colorMode } = useColorMode()

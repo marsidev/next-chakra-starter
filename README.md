@@ -7,7 +7,7 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=marsigliadev_next-chakra-starter&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=marsigliadev_next-chakra-starter)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=marsigliadev_next-chakra-starter&metric=bugs)](https://sonarcloud.io/summary/new_code?id=marsigliadev_next-chakra-starter)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=marsigliadev_next-chakra-starter&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=marsigliadev_next-chakra-starter)
-[![Depfu](https://badges.depfu.com/badges/5ce1a740c04047bcecc248c1a4d03e8c/overview.svg)](https://depfu.com/github/marsigliadev/next-chakra-starter?project_id=35366)
+[![Depfu](https://badges.depfu.com/badges/5ce1a740c04047bcecc248c1a4d03e8c/overview.svg)](https://depfu.com/github/marsidev/next-chakra-starter?project_id=35366)
 </div>
 
 
