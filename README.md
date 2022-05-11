@@ -3,7 +3,7 @@
   <p>A boilerplate for <a href="https://reactjs.org" target="_blank">React</a> apps using <a href="https://nextjs.org/=" target="_blank">Next.js</a> and <a href="https://chakra-ui.com" target="_blank">Chakra UI</a>.</p>
   
   
-[![CodeFactor](https://www.codefactor.io/repository/github/marsigliadev/next-chakra-starter/badge)](https://www.codefactor.io/repository/github/marsigliadev/next-chakra-starter)
+[![CodeFactor](https://www.codefactor.io/repository/github/marsidev/next-chakra-starter/badge)](https://www.codefactor.io/repository/github/marsidev/next-chakra-starter)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=marsigliadev_next-chakra-starter&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=marsigliadev_next-chakra-starter)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=marsigliadev_next-chakra-starter&metric=bugs)](https://sonarcloud.io/summary/new_code?id=marsigliadev_next-chakra-starter)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=marsigliadev_next-chakra-starter&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=marsigliadev_next-chakra-starter)
