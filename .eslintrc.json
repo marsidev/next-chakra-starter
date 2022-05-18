@@ -16,6 +16,7 @@
     "sourceType": "module"
   },
   "plugins": [
+    "import", 
     "react"
   ],
   "rules": {
@@ -24,10 +25,19 @@
     "comma-dangle": [ "warn", "never" ],
     "curly": ["error", "multi-line"],
     "guard-for-in": "off",
+    "import/order": ["warn", {
+      "groups": ["type", "builtin", "object", "external", "internal", "parent", "sibling", "index"],
+      "pathGroups": [{
+        "pattern": "~/**",
+        "group": "external",
+        "position": "after"
+      }],
+      "newlines-between": "always"
+    }],
     "indent": ["error", 2],
     "jsx-quotes": [ "error", "prefer-single" ],
     "no-mixed-spaces-and-tabs": "off",
-    "no-console": "off",
+    "no-console": "warn",
     "no-negated-condition": "off",
     "no-extend-native": "off",
     "no-return-assign": "off",
@@ -38,8 +48,18 @@
     "object-curly-spacing": ["error", "always"],
     "operator-linebreak": "off",
     "quotes": ["error", "single"],
+    "radix": "off",
     "react/function-component-definition": 0,
     "react/jsx-indent": [2, 2],
+    "react/jsx-sort-props": [
+      "warn",
+      {
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "noSortAlphabetically": false,
+        "reservedFirst": true
+      }
+    ],
     "react/jsx-tag-spacing": "off",
     "react/no-children-prop": "off",
     "react/prop-types": "off",

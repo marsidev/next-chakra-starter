@@ -17,25 +17,25 @@ const Footer = ({ ...props }) => {
 
   return (
     <Flex
+      align='center'
       as='footer'
       bg={useColorModeValue('white', 'gray.800')}
-      color={useColorModeValue('gray.700', 'gray.200')}
-      borderTop='1px solid'
       borderColor={useColorModeValue('gray.200', 'gray.700')}
-      width='100%'
+      borderTop='1px solid'
+      color={useColorModeValue('gray.700', 'gray.200')}
       h='auto'
       justify='center'
-      align='center'
+      width='100%'
       {...props}
     >
-      <Flex h='full' w='100%' maxW='5xl'>
+      <Flex h='full' maxW='5xl' w='100%'>
         <Flex
-          justify='space-between'
           align='center'
-          w='100%'
-          h='auto'
           flexDir={{ base: 'column', md: 'row' }}
           gap={{ base: 2, md: 0 }}
+          h='auto'
+          justify='space-between'
+          w='100%'
         >
           <Text
             color={useColorModeValue('#8e8e8e', 'gray.500')}
@@ -44,9 +44,9 @@ const Footer = ({ ...props }) => {
           >
             {'Made with ♥ by '}
             <Link
-              href={GITHUB_URL}
-              color={useColorModeValue('teal.400', 'teal.300')}
               isExternal
+              color={useColorModeValue('teal.400', 'teal.300')}
+              href={GITHUB_URL}
               textDecoration='underline'
             >
               Luis Marsiglia
@@ -55,14 +55,14 @@ const Footer = ({ ...props }) => {
           </Text>
 
           <HStack justify='center'>
-            <Icon as={SunIcon} w={4} h={4} />
+            <Icon as={SunIcon} h={4} w={4} />
             <Switch
               colorScheme='teal'
+              isChecked={colorMode === 'dark'}
               size='md'
               onChange={toggleColorMode}
-              isChecked={colorMode === 'dark'}
             />
-            <Icon as={MoonIcon} w={4} h={4} />
+            <Icon as={MoonIcon} h={4} w={4} />
           </HStack>
         </Flex>
       </Flex>

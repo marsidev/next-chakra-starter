@@ -27,10 +27,10 @@ const App = () => {
       <Box mt={4}>
         <Link href='/docs'>
           <MotionButton
+            colorScheme='pink'
             leftIcon={<DocIcon />}
             size='lg'
             variant='solid'
-            colorScheme='pink'
           >
             Docs
           </MotionButton>

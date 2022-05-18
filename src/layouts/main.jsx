@@ -11,14 +11,14 @@ export default function Layout({ children }) {
 
       {/* <Navbar h='10vh' /> */}
       <Flex
+        alignItems='center'
         as='main'
-        minH='92vh'
+        flex={1}
         flexDir='column'
         justify='center'
-        alignItems='center'
-        textAlign='center'
-        flex={1}
+        minH='92vh'
         py={14}
+        textAlign='center'
         w='100%'
       >
         {children}

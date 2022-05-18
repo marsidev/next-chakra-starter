@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps, router }) {
   return (
     <ChakraProvider theme={theme}>
       <Layout>
-        <ScaleFade key={router.route} initialScale={0.85} in={true}>
+        <ScaleFade key={router.route} in={true} initialScale={0.85}>
           <Component {...pageProps} />
         </ScaleFade>
       </Layout>

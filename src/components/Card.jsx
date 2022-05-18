@@ -9,18 +9,18 @@ const Card = ({ href, title, description }) => {
   return (
     <Link
       isExternal
-      href={href}
-      m={4}
-      p={6}
-      textAlign='left'
+      _active={{ bg: hoverBg }}
+      _hover={{ bg: hoverBg }}
       bg={bg}
       borderRadius={12}
-      transition='0.15s all ease-in-out'
-      maxW='340px'
-      h='180px'
       color={fontColor}
-      _hover={{ bg: hoverBg }}
-      _active={{ bg: hoverBg }}
+      h='180px'
+      href={href}
+      m={4}
+      maxW='340px'
+      p={6}
+      textAlign='left'
+      transition='0.15s all ease-in-out'
     >
       <article>
         <Heading as='h2' fontSize='2xl'>

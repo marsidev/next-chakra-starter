@@ -10,7 +10,7 @@ const MotionButton = ({ children, ...props }) => {
   const Button = motion(ChakraButton)
 
   return (
-    <Button variants={variants} initial='initial' whileTap='tap' {...props}>
+    <Button initial='initial' variants={variants} whileTap='tap' {...props}>
       {children}
     </Button>
   )
