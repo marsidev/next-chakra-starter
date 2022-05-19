@@ -1,10 +1,14 @@
+import { ReactNode, FC } from 'react'
 import { Box, Flex } from '@chakra-ui/react'
-import Footer from '@components/Footer'
+import { GitCorner, Footer } from '@components/index'
 import { DefaultSeo } from 'next-seo'
 import { defaultSeo } from 'next-seo.config'
-import GitCorner from '@components/GitCorner'
 
-export default function Layout({ children }) {
+type LayoutProps = {
+  children: ReactNode;
+}
+
+const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <DefaultSeo {...defaultSeo} />
@@ -31,3 +35,5 @@ export default function Layout({ children }) {
     </>
   )
 }
+
+export default Layout

@@ -4,10 +4,8 @@
     "es2021": true,
     "node": true
   },
-  "extends": [
-    "xo",
-    "plugin:react/recommended"
-  ],
+  "extends": ["xo", "plugin:react/recommended"],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -15,11 +13,16 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "import", 
-    "react"
-  ],
+  "plugins": ["import", "react", "@typescript-eslint"],
   "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "args": "after-used",
+        "ignoreRestSiblings": false,
+        "argsIgnorePattern": "^_.*?$"
+      }
+    ],
     "arrow-body-style": "off",
     "capitalized-comments": "off",
     "comma-dangle": [ "warn", "never" ],

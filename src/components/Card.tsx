@@ -1,7 +1,14 @@
+import React from 'react'
 import { Heading, Text, useColorModeValue } from '@chakra-ui/react'
-import Link from '@components/Link'
+import { Link } from '@components/index'
 
-const Card = ({ href, title, description }) => {
+type Props = {
+  href: string;
+  title: string;
+  description: string;
+}
+
+export const Card = ({ href, title, description }: Props) => {
   const bg = useColorModeValue('pink.500', 'pink.200')
   const hoverBg = useColorModeValue('pink.600', 'pink.300')
   const fontColor = useColorModeValue('white', 'gray.800')

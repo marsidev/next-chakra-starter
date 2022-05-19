@@ -1,10 +1,10 @@
-import { Box, Flex } from '@chakra-ui/react'
-import Link from '@components/Link'
-import Card from '@components/Card'
-import { BiChevronLeft as LeftIcon } from 'react-icons/bi'
-import MotionButton from '@components/MotionButton'
+import type { NextPage } from 'next'
 
-const App = () => {
+import { Box, Flex } from '@chakra-ui/react'
+import { Card, Link, MotionButton } from '@components/index'
+import { BiChevronLeft as LeftIcon } from 'react-icons/bi'
+
+const App: NextPage = () => {
   return (
     <Flex
       align='center'

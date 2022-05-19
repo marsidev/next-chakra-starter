@@ -1,6 +1,11 @@
-import { Icon, Link } from '@chakra-ui/react'
+import { Icon } from '@chakra-ui/react'
+import { Link } from '@components/index'
 
-const GitCorner = ({ url }) => {
+type Props = {
+  url: string;
+}
+
+export const GitCorner = ({ url }: Props) => {
   return (
     <Icon
       aria-hidden='true'
@@ -18,7 +23,7 @@ const GitCorner = ({ url }) => {
         isExternal
         color='#fff'
         fill='rgb(0, 0, 0)'
-        xlinkHref={url}
+        href={url}
       >
         <g>
           <path d='M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z'></path>

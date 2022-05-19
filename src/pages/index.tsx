@@ -1,22 +1,26 @@
-import { Box, Heading, useColorModeValue } from '@chakra-ui/react'
-import Link from '@components/Link'
-import { HiOutlineDocumentText as DocIcon } from 'react-icons/hi'
-import MotionButton from '@components/MotionButton'
+import type { NextPage } from 'next'
 
-const App = () => {
+import { Box, Heading, useColorModeValue } from '@chakra-ui/react'
+import { HiOutlineDocumentText as DocIcon } from 'react-icons/hi'
+import { MotionButton, Link } from '@components/index'
+
+const App: NextPage = () => {
+  const nextJSColor = useColorModeValue('blackAlpha.800', 'whiteAlpha.800')
+  const chakraColor = useColorModeValue('blackAlpha.800', 'whiteAlpha.800')
+
   return (
     <Box as='section'>
       <Heading as='h1' fontSize='6xl'>
         <Link
           isExternal
-          color={useColorModeValue('blackAlpha.800', 'whiteAlpha.800')}
+          color={nextJSColor}
           href='https://nextjs.org'
         >
           Next.js
         </Link>{' '}
         <Link
           isExternal
-          color={useColorModeValue('teal.500', 'teal.300')}
+          color={chakraColor}
           href='https://chakra-ui.com'
         >
           Chakra UI

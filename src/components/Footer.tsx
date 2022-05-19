@@ -8,21 +8,24 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import { BsSunFill as SunIcon, BsMoonFill as MoonIcon } from 'react-icons/bs'
-import Link from '@components/Link'
+import { Link } from '@components/index'
 
 const GITHUB_URL = 'https://github.com/marsidev'
 
-const Footer = ({ ...props }) => {
+export const Footer = ({ ...props }) => {
   const { toggleColorMode, colorMode } = useColorMode()
+  const bg = useColorModeValue('white', 'gray.800')
+  const textColor = useColorModeValue('gray.700', 'gray.200')
+  const linkColor = useColorModeValue('teal.400', 'teal.300')
+  const border = `1px solid ${useColorModeValue('#E2E8F0', '#2D3748')}`
 
   return (
     <Flex
       align='center'
       as='footer'
-      bg={useColorModeValue('white', 'gray.800')}
-      borderColor={useColorModeValue('gray.200', 'gray.700')}
-      borderTop='1px solid'
-      color={useColorModeValue('gray.700', 'gray.200')}
+      bg={bg}
+      borderTop={border}
+      color={textColor}
       h='auto'
       justify='center'
       width='100%'
@@ -38,14 +41,14 @@ const Footer = ({ ...props }) => {
           w='100%'
         >
           <Text
-            color={useColorModeValue('#8e8e8e', 'gray.500')}
+            color={textColor}
             fontSize={16}
             fontWeight={600}
           >
             {'Made with ♥ by '}
             <Link
               isExternal
-              color={useColorModeValue('teal.400', 'teal.300')}
+              color={linkColor}
               href={GITHUB_URL}
               textDecoration='underline'
             >
