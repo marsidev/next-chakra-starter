@@ -1,6 +1,6 @@
 <div align="center">
-  <h1>Next.js + Chakra UI Starter</h1>
-  <p>A boilerplate for <a href="https://reactjs.org" target="_blank">React</a> apps using <a href="https://nextjs.org/=" target="_blank">Next.js</a> and <a href="https://chakra-ui.com" target="_blank">Chakra UI</a>.</p>
+  <h1>TypeScript + Next.js + Chakra UI Starter</h1>
+  <p>A boilerplate for <a href="https://reactjs.org" target="_blank">React</a> apps using <a href="https://nextjs.org/=" target="_blank">Next.js</a>, <a href="https://chakra-ui.com" target="_blank">Chakra UI</a>, and <a href="https://www.typescriptlang.org" target="_blank">TypeScript</a>.</p>
   
   
 [![CodeFactor](https://www.codefactor.io/repository/github/marsidev/next-chakra-starter/badge)](https://www.codefactor.io/repository/github/marsidev/next-chakra-starter)
@@ -47,3 +47,5 @@ The following packages are pre-installed in this project:
   - [framer-motion](https://github.com/framer/motion)
   - [react-icons](https://github.com/react-icons/react-icons)
   - [zustand](https://github.com/pmndrs/zustand)
+  - [eslint](https://github.com/eslint/eslint)
+  - [eslint-config-xo](https://github.com/xojs/eslint-config-xo)
