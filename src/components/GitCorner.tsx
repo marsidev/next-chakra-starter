@@ -1,11 +1,12 @@
+import { FC } from 'react'
 import { Icon } from '@chakra-ui/react'
 import { Link } from '@components/index'
 
-type Props = {
-  url: string;
+interface GitCornerProps {
+  url: string
 }
 
-export const GitCorner = ({ url }: Props) => {
+export const GitCorner: FC<GitCornerProps> = ({ url }) => {
   return (
     <Icon
       aria-hidden='true'

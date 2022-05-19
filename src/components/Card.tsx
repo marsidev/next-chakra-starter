@@ -1,14 +1,17 @@
-import React from 'react'
+import { FC } from 'react'
 import { Heading, Text, useColorModeValue } from '@chakra-ui/react'
 import { Link } from '@components/index'
 
-type Props = {
-  href: string;
-  title: string;
-  description: string;
+interface CardProps {
+  /** Href to navigate when interected. Required. */
+  href: string
+  /** Tittle of the card. Required. */
+  title: string
+  /** Description of the card. Optional. */
+  description?: string
 }
 
-export const Card = ({ href, title, description }: Props) => {
+export const Card: FC<CardProps> = ({ href, title, description }) => {
   const bg = useColorModeValue('pink.500', 'pink.200')
   const hoverBg = useColorModeValue('pink.600', 'pink.300')
   const fontColor = useColorModeValue('white', 'gray.800')

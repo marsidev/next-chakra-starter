@@ -4,8 +4,8 @@ import { GitCorner, Footer } from '@components/index'
 import { DefaultSeo } from 'next-seo'
 import { defaultSeo } from 'next-seo.config'
 
-type LayoutProps = {
-  children: ReactNode;
+interface LayoutProps {
+  children: ReactNode
 }
 
 const Layout: FC<LayoutProps> = ({ children }) => {

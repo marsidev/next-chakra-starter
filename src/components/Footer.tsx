@@ -1,3 +1,6 @@
+import type { FlexProps } from '@chakra-ui/react'
+
+import { FC } from 'react'
 import {
   Flex,
   HStack,
@@ -12,7 +15,7 @@ import { Link } from '@components/index'
 
 const GITHUB_URL = 'https://github.com/marsidev'
 
-export const Footer = ({ ...props }) => {
+export const Footer: FC<FlexProps> = ({ ...props }) => {
   const { toggleColorMode, colorMode } = useColorMode()
   const bg = useColorModeValue('white', 'gray.800')
   const textColor = useColorModeValue('gray.700', 'gray.200')
