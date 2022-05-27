@@ -5,13 +5,13 @@
   "repository": "git@github.com:marsidev/next-chakra-starter.git",
   "private": true,
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
-    "dev": "(if exist .next rd /s /q .next 2>nul) && next dev -p 5500",
+    "dev": "pnpm cleanup && next dev -p 5500",
     "build": "next build",
     "start": "next start -p $PORT",
     "lint": "eslint . --ext .js --ext .jsx --ext .ts --ext .tsx",
     "lint:fix": "eslint . --ext .js --ext .jsx --ext .ts --ext .tsx --fix",
-    "type-check": "tsc --noEmit --incremental false"
+    "tsc": "tsc --noEmit --incremental false",
+    "cleanup": "if exist .next rd /s /q .next 2>nul"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.0.2",
