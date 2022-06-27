@@ -30,4 +30,7 @@ yarn-error.log*
 
 # vercel
 .vercel
+
 todo.md
+pnpm-lock.yaml
+*.tsbuildinfo

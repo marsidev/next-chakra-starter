@@ -1,8 +1,7 @@
 import type { MotionButtonProps } from '@components/motion/Button'
-
-import { FC } from 'react'
+import type { FC } from 'react'
+import type { Variants } from 'framer-motion'
 import MotionButtton from '@components/motion/Button'
-import { Variants } from 'framer-motion'
 
 const variants: Variants = {
   initial: { scale: 1 },

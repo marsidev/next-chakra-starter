@@ -1,6 +1,5 @@
 import type { FlexProps } from '@chakra-ui/react'
-
-import { FC } from 'react'
+import type { FC } from 'react'
 import {
   Flex,
   HStack,
@@ -11,7 +10,7 @@ import {
   useColorModeValue
 } from '@chakra-ui/react'
 import { BsSunFill as SunIcon, BsMoonFill as MoonIcon } from 'react-icons/bs'
-import { Link } from '@components/index'
+import { Link } from '@components'
 
 const GITHUB_URL = 'https://github.com/marsidev'
 

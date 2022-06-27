@@ -1,7 +1,7 @@
-import { ReactNode, FC } from 'react'
+import type { ReactNode, FC } from 'react'
 import { Box, Flex } from '@chakra-ui/react'
-import { GitCorner, Footer } from '@components/index'
 import { DefaultSeo } from 'next-seo'
+import { GitCorner, Footer } from '@components'
 import { defaultSeo } from 'next-seo.config'
 
 interface LayoutProps {

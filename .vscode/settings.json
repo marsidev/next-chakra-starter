@@ -10,5 +10,6 @@
     "hooks",
     "store",
     "misc",
+    "tests",
   ]
 }

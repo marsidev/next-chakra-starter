@@ -1,6 +1,5 @@
 import '@styles/globals.css'
 import type { AppProps } from 'next/app'
-
 import { ScaleFade } from '@chakra-ui/react'
 import { ChakraProvider } from '@lib/Chakra'
 import Layout from '@layouts/main'

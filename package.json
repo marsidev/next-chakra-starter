@@ -1,53 +1,58 @@
 {
   "name": "next-chakra-starter",
-  "description": "A boilerplate for React apps using Next.js, Chakra UI, and TypeScript.",
+  "description": "An opinionated boilerplate for React apps using Next.js, Chakra UI, and TypeScript.",
   "version": "1.0.0",
   "repository": "git@github.com:marsidev/next-chakra-starter.git",
   "private": true,
   "scripts": {
     "dev": "pnpm cleanup && next dev -p 5500",
-    "build": "next build",
+    "build": "tsc && next build",
     "start": "next start -p $PORT",
-    "lint": "eslint . --ext .js --ext .jsx --ext .ts --ext .tsx",
-    "lint:fix": "eslint . --ext .js --ext .jsx --ext .ts --ext .tsx --fix",
-    "tsc": "tsc --noEmit --incremental false",
-    "cleanup": "if exist .next rd /s /q .next 2>nul"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "tsc": "tsc",
+    "cleanup": "rimraf .next"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.1.2",
-    "@emotion/react": "^11.9.0",
-    "@emotion/styled": "^11.8.1",
-    "framer-motion": "^6.3.4",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@fontsource/nunito": "^4.5.9",
+    "@fontsource/raleway": "^4.5.9",
+    "framer-motion": "^6.3.15",
     "next": "^12.1.6",
     "next-seo": "^5.4.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-icons": "^4.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.4.0",
     "zustand": "^3.7.2"
   },
   "devDependencies": {
-    "@types/node": "^17.0.35",
-    "@types/react": "^18.0.9",
+    "@babel/core": "^7.18.5",
+    "@chakra-ui/utils": "^2.0.2",
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",
-    "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "^5.26.0",
+    "@typescript-eslint/eslint-plugin": "5.29.0",
+    "@typescript-eslint/parser": "5.29.0",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.16.0",
-    "eslint-config-xo": "^0.41.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-react-hooks": "^4.5.0",
-    "typescript": "^4.7.2"
+    "eslint": "8.0.1",
+    "eslint-config-marsi": "^1.0.7",
+    "eslint-config-standard": "17.0.0",
+    "eslint-import-resolver-typescript": "3.1.0",
+    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-n": "15.0.0",
+    "eslint-plugin-promise": "6.0.0",
+    "eslint-plugin-react": "7.30.1",
+    "rimraf": "^3.0.2",
+    "typescript": "4.7.4"
   },
-  "packageManager": "pnpm@7.0.1",
+  "packageManager": "pnpm@7.3.0",
   "engines": {
     "node": "16.x"
   },
   "pnpm": {
     "peerDependencyRules": {
-      "ignoreMissing": [
-        "@babel/core"
-      ],
       "allowedVersions": {
         "react": "18",
         "react-dom": "18"

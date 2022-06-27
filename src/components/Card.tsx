@@ -1,6 +1,6 @@
-import { FC } from 'react'
+import type { FC } from 'react'
 import { Heading, Text, useColorModeValue } from '@chakra-ui/react'
-import { Link } from '@components/index'
+import { Link } from '@components'
 
 interface CardProps {
   /** Href to navigate when interected. Required. */

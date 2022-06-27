@@ -1,8 +1,7 @@
 import type { NextPage } from 'next'
-
 import { Box, Flex } from '@chakra-ui/react'
-import { Card, Link, MotionButton } from '@components/index'
 import { BiChevronLeft as LeftIcon } from 'react-icons/bi'
+import { Card, Link, MotionButton } from '@components'
 
 const App: NextPage = () => {
   return (

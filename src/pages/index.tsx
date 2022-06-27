@@ -1,8 +1,7 @@
 import type { NextPage } from 'next'
-
 import { Box, Heading, useColorModeValue } from '@chakra-ui/react'
 import { HiOutlineDocumentText as DocIcon } from 'react-icons/hi'
-import { MotionButton, Link } from '@components/index'
+import { MotionButton, Link } from '@components'
 
 const App: NextPage = () => {
   const nextJSColor = useColorModeValue('blackAlpha.800', 'whiteAlpha.800')

@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-
 import { Heading, Container, Center, HStack, StackDivider } from '@chakra-ui/react'
 import { DefaultSeo } from 'next-seo'
 
